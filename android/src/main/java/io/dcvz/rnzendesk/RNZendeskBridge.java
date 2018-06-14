@@ -38,17 +38,15 @@ public class RNZendeskBridge extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void identifyAnon() {
-        Identity identity = new AnonymousIdentity();
-        Zendesk.INSTANCE.setIdentity(identity);
-    }
-
-    @ReactMethod
     public void identifyAnon(String name, String email) {
-        Identity identity = new AnonymousIdentity.Builder()
-            .withNameIdentifier(name)
-            .withEmailIdentifier(email)
-            .build();
+        AnonymousIdentity.Builder builder = new AnonymousIdentity.Builder();
+        if (name != null) {
+            builder = builder.withNameIdentifier(name);
+        }
+        if (email != null) {
+            builder = builder.withEmailIdentifier(email);
+        }
+        Identity identity = builder.build();
         Zendesk.INSTANCE.setIdentity(identity);
     }
 
