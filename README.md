@@ -13,6 +13,11 @@ npm install --save react-native-zendesk
 react-native link react-native-zendesk
 ```
 
+3. For your iOS app, add the Zendesk frameworks (`ZendeskSDK.framework`, `ZendeskCoreSDK.framework`, and `ZendeskProviderSDK.framework`) and strings bundle (`ZendeskSDKStrings.bundle`) to your app target. Embed the frameworks and bundle. Link against the frameworks. Then add a Run Script build phase to your app target to strip the extra architectures from the Zendesk frameworks, with the following script:
+```
+bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZendeskCoreSDK.framework/strip-frameworks.sh"
+```
+
 ## Getting Started
 ### Initializing the Support SDK (Required)
 ```js

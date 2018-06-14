@@ -122,7 +122,6 @@
 				9BE9BDF820930DC5002221AF /* Resources */,
 				9BEDAFD8208E90CB000BFECF /* Copy Files */,
 				9BE9BB62209072ED002221AF /* Embedded Binaries */,
-				9BE9BB66209073A3002221AF /* Strip Zendesk Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,23 +175,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9BE9BB66209073A3002221AF /* Strip Zendesk Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Strip Zendesk Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZendeskCoreSDK.framework/strip-frameworks.sh\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9BEDAFD6208E90CB000BFECF /* Sources */ = {
