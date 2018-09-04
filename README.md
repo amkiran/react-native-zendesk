@@ -13,7 +13,7 @@ npm install --save react-native-zendesk
 react-native link react-native-zendesk
 ```
 
-3. For your iOS app, add Zendesk SDK 2 via Pod, add this to your pod `pod 'ZendeskSDK`, then `pod install`
+3. For your iOS app, add Zendesk SDK 2 via Pod, add this to your pod `pod 'ZendeskSDK'`, then `pod install`
 
 4. For your iOS app, add a Run Script build phase to your app target to strip the extra architectures from the Zendesk frameworks, with the following script:
 
