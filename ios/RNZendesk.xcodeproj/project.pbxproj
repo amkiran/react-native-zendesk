@@ -233,7 +233,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/**",
+					"$(SRCROOT)/../../../ios/Pods/ZendeskSDK/**",
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -260,7 +260,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/**",
+					"$(SRCROOT)/../../../ios/Pods/ZendeskSDK/**",
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../react-native/React/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
